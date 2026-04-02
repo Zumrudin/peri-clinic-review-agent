@@ -1,0 +1,12 @@
+.env
+data/yandex_cookies.json
+data/review_queue.json
+data/sent_reviews.json
+data/stats.json
+data/notified_ids.json
+data/pending_*.json
+logs/
+__pycache__/
+*.pyc
+.venv/
+venv/
