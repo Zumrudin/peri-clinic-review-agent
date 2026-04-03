@@ -161,7 +161,7 @@ def get_cookies_manual() -> tuple:
 
         # Пробуем автоматический вход
         try:
-            page.locator("input").first.fill(YANDEX_LOGIN)
+            page.locator("input[type='text'], input[type='email'], input:not([type])").first.fill(YANDEX_LOGIN)
             page.keyboard.press("Enter")
             page.wait_for_timeout(3000)
             page.wait_for_selector("input[type='password']", timeout=8000)

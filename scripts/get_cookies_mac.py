@@ -36,7 +36,7 @@ def get_yandex_cookies():
         page.wait_for_timeout(2000)
 
         # Вводим логин
-        page.locator("input").first.fill(YANDEX_LOGIN)
+        page.locator("input[type='text'], input[type='email'], input:not([type])").first.fill(YANDEX_LOGIN)
         page.keyboard.press("Enter")
         page.wait_for_timeout(3000)
 
